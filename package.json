@@ -1,6 +1,6 @@
 {
-  "homepage": "http://beni1919.github.io/weather",
-  "name": "weather",
+  "homepage": "http://beni1919.github.io/weather-app",
+  "name": "weather-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
