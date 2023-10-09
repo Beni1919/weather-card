@@ -1,0 +1,4 @@
+<div className="search-bar">
+    <input id="find-city" type="text" onChange={handleChange} value={find}/>
+    <button id="find-btn" onClick={handleClick}></button>
+</div>

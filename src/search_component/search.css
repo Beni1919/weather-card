@@ -1,0 +1,59 @@
+#find-btn{
+    position: absolute;
+    border-radius: 25px;
+    width: 35px;
+    border: 0px;
+    margin-left: 3px;
+    height: 35px;
+    bottom:0;
+    right: 0;
+}
+
+#find-city{
+    height: 30px;
+    width: 680px;
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+
+.search-bar{
+    position: relative;
+}
+
+@media all and (max-width:767px){
+    .search-bar{
+        width: 96vw;
+    }
+
+    #find-city{
+        position: relative;
+        top: 2vh;
+        left: 4vw;
+        height: 30px;
+        float: left;
+        width: 70vw;
+        border: 0px;
+        background: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        color: white;
+        font-size: 3.5vh;
+        padding-left: 8vw;
+        text-align: center;
+    }
+
+    #find-city:focus{
+        outline: none;
+    }
+
+    #find-btn{
+        position: absolute;
+        top: 1vh;
+        right: 2vw;
+        border-radius: 100px;
+        width: 45px;
+        border: 0px;
+        margin-left: 3px;
+        height: 45px;
+        filter:  brightness(0) invert(1);
+    }
+}

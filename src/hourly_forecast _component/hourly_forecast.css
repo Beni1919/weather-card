@@ -1,0 +1,131 @@
+.hourly-container{
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(354deg, rgba(0,176,255,1) 0%, rgba(161,69,252,1) 100%);
+}
+
+.chart-container{
+    align-self: flex-end;
+    text-align: center;
+    justify-content: center;
+}
+
+.chart-bar{
+    width: 7px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.hourly-temp{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    float: left;
+}
+
+.hourly-celsius-sign{
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    vertical-align: 3px;
+    overflow: hidden;
+}
+
+.forecast-hours{
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.today-label{
+    float: none;
+    display: block;
+    position: absolute;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+@media all and (max-width:767px){
+    .hourly-container{
+        width: 96vw;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 25px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        overflow-x: scroll;
+        border: none;
+    }
+    
+    .chart-container{
+        align-self: flex-end;
+        text-align: center;
+        justify-content: center;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+    .chart-bar{
+        width: 7px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hourly-temp{
+        color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        float: left;
+    }
+    
+    .hourly-celsius-sign{
+        color: rgb(255, 255, 255);
+        font-size: 6px;
+        vertical-align: 3px;
+        overflow: hidden;
+    }
+    
+    .forecast-hours{
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+    }
+
+    .today-label-container{
+        position: sticky;
+        left:0;
+        white-space: nowrap;
+    }
+
+    .today-label{
+        float: left;
+        position: absolute;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        padding-left: 2vw;
+    }
+
+}

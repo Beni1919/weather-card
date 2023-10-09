@@ -1,0 +1,45 @@
+.current-weather{
+    text-align: center;
+    padding-top: 30px;
+    background-size:cover;
+    color: white;
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.city{
+    font-size: 31px;
+}
+
+.country{
+    font-size: 12px;
+}
+
+.weather-icon{
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.temperature{
+    font-size: 75px;
+}
+
+.celsius-sign{
+    font-size: 27px;
+    vertical-align: 43px;
+}
+
+@media all and (max-width:767px){
+    .current-weather{
+        width: 96vw;
+        height: 427px;
+        padding-bottom: 45px;
+        padding-top: 12vh;
+        justify-content: center;
+      } 
+}

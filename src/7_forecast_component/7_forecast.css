@@ -1,0 +1,82 @@
+.forecast-container{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+.forecast-card{
+    color: white;
+    border-radius: 25px;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-width: 100px;
+    max-height: 150px;
+}
+
+.forecast-icon{
+    width: 50px;
+    height: auto;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.sevendays-temperature{
+    font-size: 20px;
+}
+
+.sevendays-celsius-sign{
+    font-size: 12px;
+    vertical-align: 10px;
+}
+
+@media all and (max-width:767px){
+
+    .forecast-container{
+        width: 96vw;
+        display: block;
+        height: fit-content;
+      }
+
+    .forecast-card{
+        text-align: center;
+        overflow: hidden;
+        color: white;
+        border-radius: 0px;
+        font-family: 'Poppins', sans-serif;
+        float: none;
+        height: fit-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid white;
+    
+    }
+
+    .forecast-day{
+        float: left;
+    }
+
+    .forecast-icon{
+        float: right;
+        width: 50px;
+        height: auto;
+    }
+    
+    .sevendays-temperature{
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sevendays-celsius-sign{
+        font-size: 16px;
+        vertical-align: 20px;
+    }
+
+}

@@ -1,0 +1,10 @@
+.map-img{
+    border-radius: 25px;
+    margin-left: 3px;
+}
+
+@media all and (max-width:767px){
+    .map-img{
+        width: 96vw;
+    } 
+}

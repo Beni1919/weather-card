@@ -1,0 +1,78 @@
+.current-weather{
+  grid-area: card;
+}
+
+.search-bar{
+  grid-area: search-bar;
+  height:fit-content;
+}
+
+.forecast-container{
+  grid-area: forecast;
+}
+
+.map-img{
+  grid-area: map;
+}
+
+.hourly-container{
+  grid-area: hourly;
+}
+
+.app-container{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+  'card search-bar'
+  'card forecast'
+  'card hourly'
+  'card map';
+  border-radius: 25px;
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (max-width:767px){
+  .app-container{
+    grid-template-areas:
+    'search-bar'
+    'card'
+    'hourly'
+    'map'
+    'forecast';
+    width:96vw;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .search-bar{
+    width:96vw;
+    z-index: 10;
+  }
+
+  .current-weather{
+    position: relative;
+    top: -39px;
+    background-image: none;
+  }
+
+  .forecast-container{
+    grid-area: forecast;
+    position: relative;
+    top: -39px;
+  }
+  
+  .map-img{
+    grid-area: map;
+    position: relative;
+    top: -39px;
+  }
+  
+  .hourly-container{
+    grid-area: hourly;
+    position: relative;
+    top: -39px;;
+  }
+
+}
